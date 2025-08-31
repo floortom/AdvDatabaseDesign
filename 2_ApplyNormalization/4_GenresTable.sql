@@ -1,0 +1,1 @@
+CREATE INDEX idx_genre_name on Genres(Name);
