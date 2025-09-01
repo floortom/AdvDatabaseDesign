@@ -8,8 +8,7 @@ CREATE TABLE Artists_New(
 	Name TEXT NOT NULL,
 	BirthDate date NOT NULL,
 	GenreID INTEGER,
-	FOREIGN KEY (GenreID) REFERENCES Genres(GenreID),
-	CHECK(BirthDate<=date('now', '-18 years'))
+	FOREIGN KEY (GenreID) REFERENCES Genres(GenreID)
 );
 
 -- Drop the original table
