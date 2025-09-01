@@ -1,0 +1,11 @@
+SQLite version 3.50.4 2025-07-30 19:33:53
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .open 'C:\Users\PLFLORCZUKT\OneDrive - Tetra Pak\Apps\SQL\AdvDatabaseDesign\iMediaMusic.db'
+sqlite> .mode csv
+sqlite> .import 'C:\Users\PLFLORCZUKT\OneDrive - Tetra Pak\Apps\SQL\AdvDatabaseDesign\3_ETL\Albums_Raw.csv' AlbumsTemp
+sqlite> .import 'C:\Users\PLFLORCZUKT\OneDrive - Tetra Pak\Apps\SQL\AdvDatabaseDesign\3_ETL\Artists_Raw.csv' ArtistsTemp
+sqlite> .import 'C:\Users\PLFLORCZUKT\OneDrive - Tetra Pak\Apps\SQL\AdvDatabaseDesign\3_ETL\Genres_Raw.csv' GenresTemp
+sqlite> .import 'C:\Users\PLFLORCZUKT\OneDrive - Tetra Pak\Apps\SQL\AdvDatabaseDesign\3_ETL\Tracks_Raw.csv' TracksTemp
+sqlite>
